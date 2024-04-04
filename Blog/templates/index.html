@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Blog</title>
+    </head>
+    <body>
+        <h1>Mon blog</h1>
+        {% for a in articles %}
+            <p>{{ a.title }}</p>
+            <a href="/blog/article/{{ a.id }}">Voir l'article ({{ a.calculate_words }} mots)</a>
+
+            <img src={{ a.image }} alt={{ a.title }} width="200"/>
+        {% endfor %}
+    </body>
+</html>

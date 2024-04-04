@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+        <h1>Bienvenue sur mon site</h1>
+        <p>Je m'appelle {{ prenom }}</p>
+        <p>J'ai actuellement {{ age }} ans</p>
+        {% if age < 18 %}
+            <p>Tu es mineur</p>
+        {% else %}
+            <p>Tu es majeur</p>
+        {% endif %}
+    </body>
+</html>
